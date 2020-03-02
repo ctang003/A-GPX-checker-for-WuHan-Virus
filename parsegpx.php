@@ -74,7 +74,6 @@ if(isset($_FILES["gpxfile1"]) && isset($_FILES["gpxfile2"])) {
     $target_file2 = $target_dir . basename($_FILES["gpxfile2"]["name"]);
     $gpxFileType1 = strtolower(pathinfo($target_file1,PATHINFO_EXTENSION));
     $gpxFileType2 = strtolower(pathinfo($target_file2,PATHINFO_EXTENSION));
-    // Check if gpx file is a actual gpx or fake gpx
     // Check if file already exists
     $uploadOk = 1;
     if (file_exists($target_file1)) {
